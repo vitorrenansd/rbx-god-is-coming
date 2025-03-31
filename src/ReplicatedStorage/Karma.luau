@@ -16,12 +16,12 @@ end
 
 -- Increase your Karma
 function Karma:plusKarma(quant)
-	self.karma.Value = self.karma.Value + quant
+	self.karma.Value = self:getKarma() + quant
 end
 
 -- Decrease your Karma
 function Karma:minusKarma(quant)
-	self.karma.Value = self.karma.Value - quant
+	self.karma.Value = self:getKarma() - quant
 end
 
 -- Updates karma textlabel from StarterGui
