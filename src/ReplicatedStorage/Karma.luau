@@ -24,7 +24,7 @@ function Karma:minusKarma(quant)
 	self.karma.Value = self:getKarma() - quant
 end
 
--- Updates karma textlabel from StarterGui
+-- Updates karma textlabel -- (I recommends StarterGui/Frame/TextLabel)
 function Karma:updateKarmaDisplay(TextLabel)
 	local newValue = self:getKarma()
 
