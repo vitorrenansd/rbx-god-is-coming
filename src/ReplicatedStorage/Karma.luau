@@ -9,6 +9,7 @@ function Karma.new()
     return self
 end
 
+
 -- Returns a IntValue of total karma
 function Karma:getKarma()
     return self.karma.Value
@@ -24,7 +25,7 @@ function Karma:minusKarma(quant)
 	self.karma.Value = self:getKarma() - quant
 end
 
--- Updates karma textlabel -- (I recommends StarterGui/Frame/TextLabel)
+-- Updates karma textlabel (StarterGui/Frame/TextLabel)
 function Karma:updateKarmaDisplay(TextLabel)
 	local newValue = self:getKarma()
 
